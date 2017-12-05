@@ -15,7 +15,7 @@ import { ShoppingModule } from './shopping/shopping.module';
 
 @NgModule({
   declarations: [
-    AppComponent   
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +27,7 @@ import { ShoppingModule } from './shopping/shopping.module';
     RouterModule.forRoot([
       { path: '', component: ProductsComponent },
       { path: 'login', component: LoginComponent },
-    ])    
+    ])
   ],
   providers: [
     AdminAuthGuard,
