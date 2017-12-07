@@ -17,8 +17,13 @@
   text-transform: uppercase;
 }
 .img-yesh{
+  width: 110px;
+  height: 200px;
+  background-size: contain;
+}
+.img-yesh-dev{
   padding: 12px;
-  margin-left: 34px;
+  margin: 0 auto;
   width: 120px;
   height: 200px;
 }

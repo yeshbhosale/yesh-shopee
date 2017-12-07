@@ -2,9 +2,20 @@
 .dropdown-toggle { 
   cursor: pointer;
 }
-.app-icon{
+/* .app-icon{
   font-weight: bold;
   background-color: #ababab;
   padding: 2px 15px 5px 15px;
   border-radius: 25px;
+} */
+.nav-yesh{
+  background-color: #033550 !important;
+  color: white;
 }
+
+.user-yesh, .app-icon {
+ color:  #ffffff !important;
+}
+ .app-icon:hover{
+  color:  #19bd9c !important;
+ }

@@ -39,7 +39,7 @@ export class ProductsComponent implements OnInit  {
       })
       .subscribe(params => {
         this.category = params.get('category');
-        this.applyFilter();      
+        this.applyFilter();
       });
   }
 

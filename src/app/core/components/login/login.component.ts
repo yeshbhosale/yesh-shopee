@@ -1,5 +1,6 @@
 import { AuthService } from 'shared/services/auth.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -7,10 +8,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  constructor(private auth: AuthService) { 
+//   @ViewChild('f') slForm: NgForm;
+  constructor(private auth: AuthService) {
   }
 
-  login() { 
+  // tslint:disable-next-line:use-life-cycle-interface
+  ngOnInit() {
+      }
+
+  onSignin(form: NgForm) {
+      const email = form.value.email;
+      const password = form.value.password;
+      this.auth.signinUser(email, password);
+  }
+  // clear() {
+  //   this.slForm.reset();
+  // }
+  login() {
     this.auth.login();
   }
+
 }
