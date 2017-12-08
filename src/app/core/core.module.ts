@@ -5,6 +5,7 @@ import { HomeComponent } from './components/home/home.component';
 import { BsNavbarComponent } from './components/bs-navbar/bs-navbar.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SignupComponent } from './components/signup/signup.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import { CommonModule } from '@angular/common';
     BsNavbarComponent,
     HomeComponent,
     LoginComponent,
+    SignupComponent,
   ],
   exports: [
     BsNavbarComponent

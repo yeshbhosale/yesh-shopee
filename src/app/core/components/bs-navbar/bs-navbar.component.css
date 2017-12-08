@@ -19,3 +19,7 @@
  .app-icon:hover{
   color:  #19bd9c !important;
  }
+
+.navbar-nav a{
+  display: inline-block;
+} 

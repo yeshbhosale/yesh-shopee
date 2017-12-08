@@ -31,6 +31,16 @@ export class AuthService {
     this.afAuth.auth.signOut();
   }
 
+  signupUser(email: string, password: string) {
+    let returnUrl = this.route.snapshot.queryParamMap.get('returnUrl') || '/';
+    localStorage.setItem('returnUrl', returnUrl);
+    firebase.auth().createUserWithEmailAndPassword(email, password)
+      .catch(
+        error => console.log(error)
+      );
+  }
+
+
   signinUser(email: string, password: string) {
     let returnUrl = this.route.snapshot.queryParamMap.get('returnUrl') || '/';
     localStorage.setItem('returnUrl', returnUrl);
